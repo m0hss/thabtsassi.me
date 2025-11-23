@@ -1,0 +1,139 @@
+---
+import Layout from '~/layouts/Layout.astro';
+
+interface Projects {
+  [key: string]: {
+    name: string;
+    description: string;
+    url: string;
+    icon: string | string[];
+    class?: string;
+  }[];
+}
+
+const projects: Projects = {
+  Web: [
+    {
+      name: 'wprojects',
+      description: 'A sleek Next.js-based shop for WordPress templates and plugins',
+      url: 'https://sassi-wprojects.org',
+      icon: 'i-local:wprojects01',
+    },
+    {
+      name: 'datapex',
+      description: 'Data-quality assessment platform with automated analysis, dashboards, and ML-based enrichment.',
+      url: 'https://victorious-pond-02363e403.3.azurestaticapps.net/',
+      icon: 'i-local:datapx',
+    },
+    {
+      name: 'vsconcepts',
+      description: 'A responsive, SEO-optimized Next.js site showcasing modern exterior design and key projects.',
+      url: 'https://vsconcepts.fr/',
+      icon: 'i-local:vs',
+    },
+    {
+      name: 'greenwave',
+      description: 'E-commerce platform and dashboard for a recycling company, built with Laravel',
+      url: 'https://github.com/m0hss/green-wave',
+      icon: 'i-local:green-wave',
+    },
+    {
+      name: 'unaco',
+      description: 'UNACO – Futuristic landing page for a Congolese organization',
+      url: 'https://github.com/m0hss/unaco-dev',
+      icon: 'i-local:unaco',
+    },
+    {
+      name: 'kooralive',
+      description: 'WordPress football site providing API-based match data, bilingual support, SEO optimization, and a full control panel for managing teams, tournaments, and live streams.',
+      url: 'https://kooralive.channel',
+      icon: 'i-local:koora1',
+    },
+    {
+      name: 'thabtsassi.me',
+      description: 'Personal website, built using Astro',
+      url: '/',
+      icon: 'i-local:logo',
+    },
+  ],
+  Applications: [
+    {
+      name: 'ikarma',
+      description: 'App for sharing instant karma moments, built with Python and PySide2/PyQt5, with a FastAPI backend',
+      url: 'https://github.com/m0hss/Ikarma',
+      icon: 'i-local:ikarma',
+    },
+    {
+      name: 'pizza dallas',
+      description:
+        'E-commerce Web & Mobile App – Full-featured platform with web (CMS CE Phoenix), mobile (React Native), and Strapi backend.',
+      url: 'https://github.com/m0hss/Pzdalas-strapi',
+      icon: 'i-local:pizza-dallas',
+    },
+  ],
+  Miscellaneous: [
+    {
+      name: 'ffox-theme-extension',
+      description: 'Firefox theme extension featuring abstract One Piece designs',
+      url: 'https://addons.mozilla.org/en-US/firefox/addon/one-piece-abstract/',
+      icon: 'i-local:ext1',
+    },
+    {
+      name: 'wp-plugin-koora',
+      description: 'WordPress plugin for managing football leagues, teams, and matches with shortcode support',
+      url: 'https://www.sassi-wprojects.org/products/m0KooraBoards',
+      icon: 'i-carbon-workspace',
+    },
+  ],
+};
+---
+
+<Layout title="Projects" description="Thabt Sassi's Projects">
+  <div class="text-center">
+    <h1 class="font-800 text-3xl">Projects</h1>
+    <br />
+    <p class="opacity-60 italic">Projects that I created or maintaining</p>
+    <br />
+    <div class="separator w-20ch m-auto"></div>
+    <br />
+
+    {
+      Object.entries(projects).map(([category, projects]) => (
+        <>
+          <h2 class="opacity-60 font-800 italic text-xl">{category}</h2>
+          <br />
+          <div class="max-w-65ch slide-enter-content m-auto grid sm:grid-cols-2">
+            {projects.map((p) => (
+              <a
+                href={p.url}
+                target="_blank"
+                title={p.name}
+                class="text-start color-inherit decoration-none rd-2 p-4 hover:bg-dark/3 dark:hover:bg-light/3 opacity-50 hover:opacity-100 grid grid-cols-[3.75rem_auto] gap-2 items-center"
+                data-trail-cursor
+              >
+                <div class="flex justify-center items-center opacity-60" class:list={p.class}>
+                  {Array.isArray(p.icon) ? (
+                    <div class="flex first:children:(translate-y--50% translate-x--50%)">
+                      {p.icon.map((icon) => (
+                        <span class="scale-200" class:list={icon} />
+                      ))}
+                    </div>
+                  ) : typeof p.icon === 'string' && p.icon.includes('>') ? (
+                    <Fragment set:html={p.icon} />
+                  ) : (
+                    <span class="scale-200" class:list={p.icon} />
+                  )}
+                </div>
+                <div>
+                  <div class="text-xl">{p.name}</div>
+                  <div class="opacity-60 text-sm">{p.description}</div>
+                </div>
+              </a>
+            ))}
+          </div>
+          <br />
+        </>
+      ))
+    }
+  </div>
+</Layout>

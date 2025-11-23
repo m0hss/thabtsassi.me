@@ -1,0 +1,271 @@
+/* Global styles for effects that can't be expressed with UnoCSS utilities */
+:root {
+  --bg-color-light: 225, 240, 255;
+  /* soft, light blue */
+  --bg-color-dark: 10, 12, 30;
+  --bg-color: var(--bg-color-light);
+  --bg-color-inverse: var(--bg-color-dark);
+  --clip-radius: 0px;
+  --clip-x: 0px;
+  --clip-y: 0px;
+}
+
+html.dark {
+  --bg-color: var(--bg-color-dark);
+  --bg-color-inverse: var(--bg-color-light);
+}
+
+/* Focus outline for accessibility */
+*:focus-visible {
+  outline-color: currentColor;
+  outline-style: solid;
+  outline-width: 0.1rem;
+  outline-offset: 0.2rem;
+}
+
+.site-logo:focus-visible {
+  outline-offset: 0;
+}
+
+html::before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: fixed;
+  z-index: -999;
+  background-color: rgb(var(--bg-color-light));
+  clip-path: circle(var(--clip-radius) at var(--clip-x) var(--clip-y));
+  transition: clip-path 400ms ease-out;
+}
+
+/* Disable transitions until page is loaded */
+html.preload,
+html.preload *,
+html.preload::after,
+html.preload *::after,
+html.preload::before,
+html.preload *::before {
+  transition: none !important;
+}
+
+html {
+  overflow-x: hidden;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  background-color: rgb(var(--bg-color-dark));
+  font-family:
+    Inter,
+    ui-sans-serif,
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    Segoe UI,
+    Roboto,
+    Helvetica Neue,
+    Arial,
+    Noto Sans,
+    sans-serif,
+    'Apple Color Emoji',
+    'Segoe UI Emoji',
+    Segoe UI Symbol,
+    'Noto Color Emoji';
+}
+
+/* Background gradient bottom right */
+html::after {
+  content: '';
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+  z-index: -998;
+  background-image: radial-gradient(circle at 150% 150%,
+      rgba(var(--bg-color-inverse), 1) 0%,
+      rgba(var(--bg-color-inverse), 0.75) 25%,
+      rgba(var(--bg-color-inverse), 0.5) 50%,
+      rgba(var(--bg-color-inverse), 0) 75%);
+}
+
+html.dark::after {
+  opacity: 0.3;
+}
+
+body {
+  cursor: none;
+}
+
+/* Logo theming: ensure the raster-based SVG logo remains visible in dark mode */
+.site-logo {
+  /* no color change in light mode */
+  filter: none;
+  transition: filter 200ms ease;
+  display: inline-block;
+}
+
+
+
+html.dark .site-logo {
+  /* invert to white-ish on dark backgrounds while preserving contrast */
+  filter: invert(1) hue-rotate(180deg) brightness(1.1) contrast(1.05);
+}
+
+/* Apply filter to local SVGs in projects to make black to gray in dark mode */
+html.dark [class*="i-local"] {
+  filter: invert(1) hue-rotate(180deg) brightness(1.1) contrast(1.05);
+}
+
+/* Override for ext1 icon to make it white in dark mode */
+html.dark [class*="i-local:ext1"] {
+  filter: none;
+  color: #fff;
+}
+
+/* https://antfu.me/posts/sliding-enter-animation */
+@keyframes slide-enter {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html::before {
+    transition: none;
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+
+  .slide-enter,
+  .slide-enter-content>* {
+    --stagger: 0;
+    --delay: 90ms;
+    --start: 0ms;
+    animation: slide-enter 0.6s both 1;
+    animation-delay: calc(var(--start) + var(--stagger) * var(--delay));
+  }
+
+  .slide-enter-content>*:nth-child(1) {
+    --stagger: 1 !important;
+  }
+
+  .slide-enter-content>*:nth-child(2) {
+    --stagger: 2 !important;
+  }
+
+  .slide-enter-content>*:nth-child(3) {
+    --stagger: 3 !important;
+  }
+
+  .slide-enter-content>*:nth-child(4) {
+    --stagger: 4 !important;
+  }
+
+  .slide-enter-content>*:nth-child(5) {
+    --stagger: 5 !important;
+  }
+
+  .slide-enter-content>*:nth-child(6) {
+    --stagger: 6 !important;
+  }
+
+  .slide-enter-content>*:nth-child(7) {
+    --stagger: 7 !important;
+  }
+
+  .slide-enter-content>*:nth-child(8) {
+    --stagger: 8 !important;
+  }
+
+  .slide-enter-content>*:nth-child(9) {
+    --stagger: 9 !important;
+  }
+
+  .slide-enter-content>*:nth-child(10) {
+    --stagger: 10 !important;
+  }
+
+  .slide-enter-content>*:nth-child(11) {
+    --stagger: 11 !important;
+  }
+
+  .slide-enter-content>*:nth-child(12) {
+    --stagger: 12 !important;
+  }
+
+  .slide-enter-content>*:nth-child(13) {
+    --stagger: 13 !important;
+  }
+
+  .slide-enter-content>*:nth-child(14) {
+    --stagger: 14 !important;
+  }
+
+  .slide-enter-content>*:nth-child(15) {
+    --stagger: 15 !important;
+  }
+
+  .slide-enter-content>*:nth-child(16) {
+    --stagger: 16 !important;
+  }
+
+  .slide-enter-content>*:nth-child(17) {
+    --stagger: 17 !important;
+  }
+
+  .slide-enter-content>*:nth-child(18) {
+    --stagger: 18 !important;
+  }
+
+  .slide-enter-content>*:nth-child(19) {
+    --stagger: 19 !important;
+  }
+
+  .slide-enter-content>*:nth-child(20) {
+    --stagger: 20 !important;
+  }
+}
+
+/* Show (#) before headings (h1, h2) */
+a.heading-link::before {
+  content: '#';
+  position: absolute;
+  transform: translateX(-150%);
+  opacity: 0;
+  transition: opacity 300ms ease-in-out;
+}
+
+a.heading-link:hover::before {
+  opacity: 1;
+}
+
+#mouse-circle {
+  --circle-x: 0px;
+  --circle-y: 0px;
+  --circle-width: 0px;
+  --circle-height: 0px;
+  --circle-radius: 0px;
+  --circle-z-index: 999;
+  position: fixed;
+  display: none;
+  width: var(--circle-width);
+  height: var(--circle-height);
+  left: var(--circle-x);
+  top: var(--circle-y);
+  border-radius: var(--circle-radius);
+  border: 0.1rem solid;
+  pointer-events: none;
+  z-index: var(--circle-z-index);
+  transition:
+    width 400ms,
+    height 400ms;
+}

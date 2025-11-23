@@ -1,0 +1,97 @@
+---
+import ThemeToggle from './ThemeSwitch.astro';
+import Logo from '@public/logo.svg?raw';
+---
+
+<header>
+  <nav class="nav-header">
+    <div class="flex items-center">
+      <a
+        id="skip-to-main-content"
+        href="#main-content"
+        aria-label="Home"
+        class="bg-[rgba(var(--bg-color-inverse))] color-inherit decoration-none z-1000 rd-rb-1 h-18 px-10 flex justify-center items-center absolute top--40 left-0 focus:top-0 transition-top-400"
+      >
+        <span class="color-[rgba(var(--bg-color))]"> Skip to main content </span>
+      </a>
+
+      <a
+        href="/"
+        title="Home"
+        class="btn-link pt-2"
+        data-trail-cursor
+        data-trail-cursor-padding
+      >
+        <Fragment set:html={Logo} />
+      </a>
+    </div>
+
+    <div class="flex items-center gap-4">
+      <a
+        href="/projects"
+        title="Projects"
+        class="btn-link"
+        data-trail-cursor
+        data-trail-cursor-padding
+      >
+        <span class="i-ri-lightbulb-line md:hidden"></span>
+        <span class="lt-md:hidden"> Projects </span>
+      </a>
+
+      <a href="/cv" title="CV" class="btn-link" data-trail-cursor data-trail-cursor-padding>
+        <span class="i-ri-file-text-line md:hidden"></span>
+        <span class="lt-md:hidden"> CV </span>
+      </a>
+
+      <a
+        class="btn-link"
+        href="https://github.com/m0hss"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="GitHub"
+        title="GitHub"
+        data-trail-cursor
+        data-trail-cursor-padding
+      >
+        <span class="i-ri-github-line" aria-hidden="true"></span>
+      </a>
+
+      <a
+        class="btn-link"
+        href="https://www.linkedin.com/in/m0hamed-sassi/"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="LinkedIn"
+        title="LinkedIn"
+        data-trail-cursor
+        data-trail-cursor-padding
+      >
+        <span class="i-ri-linkedin-line" aria-hidden="true"></span>
+      </a>
+      <a
+        class="btn-link"
+        href="https://reddit.com/u/m0xsas"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Reddit"
+        title="Reddit"
+        data-trail-cursor
+        data-trail-cursor-padding
+      >
+        <span class="i-ri-reddit-line" aria-hidden="true"></span>
+      </a>
+      <a
+        class="btn-link"
+        href="mailto:t.sassi@clevertech-france.fr"
+        aria-label="Email"
+        title="Email"
+        data-trail-cursor
+        data-trail-cursor-padding
+      >
+        <span class="i-ri-mail-line" aria-hidden="true"></span>
+      </a>
+
+      <ThemeToggle />
+    </div>
+  </nav>
+</header>
