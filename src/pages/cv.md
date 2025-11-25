@@ -19,13 +19,13 @@ description: "Thabt Sassi's CV"
 
 ### Contact information
 
-- Website: https://thabtsassi.me
+- Website: https://thabtsassi.netlify.app
 - E-mail: t.sassi@clevertech-france.fr
 - Location: [Saint-Gilles, Belgium](https://maps.app.goo.gl/Lri5ppTT44Yw5snF9)
 
 ### Work Experience
 
-- [Clevertech France](https://www.clevertech-france.fr/) (_June 2025 - Present_) - Developer (intern) / Support Engineer
+- [Clevertech France](https://www.clevertech-france.fr/) (_June 2024 - Present_) - Developer (intern) / Support Engineer
   - Contributed to the development of a data quality assessment SaaS platform built with a
     research laboratory, integrating scientifically validated data metrics.
   - Developed backend features in Python/Django REST; implemented syntactic and semantic

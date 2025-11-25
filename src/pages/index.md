@@ -8,9 +8,9 @@ showFooterGoBack: false
 <br />
 
 Hi, I am **Thabt Sassi**, an IT professional and open source enthusiast with experience in software development, system maintenance, and technical support.
-I combine strong troubleshooting abilities with practical backend and web development skills, and I am currently based in Brussels.
+I combine strong troubleshooting abilities with practical backend and frontend development skills, and I am currently based in Brussels.
 
-I recently completed a mission at [Clevertech Consulting](https://www.clevertech-france.fr/), working on a SaaS platform where I contributed to both backend and frontend development, and later focused on application support, improving reliability, and resolving issues.
+I recently completed a mission at [Clevertech France](https://www.clevertech-france.fr/), working on a SaaS platform where I contributed to both backend and frontend development, and later focused on application support, improving reliability, and resolving issues.
 
 My expertise includes:
 
