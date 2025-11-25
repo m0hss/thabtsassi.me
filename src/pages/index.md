@@ -17,7 +17,7 @@ My expertise includes:
 - **Back-end:**
   <span class="print:hidden i-devicon-python align-middle" aria-hidden="true"></span> Python(APIs, data-quality processing pipelines),
   <span class="print:hidden i-devicon-nodejs align-middle" aria-hidden="true"></span> Node.js,
-  <span class="print:hidden i-devicon-djangorest-wordmark align-middle" aria-hidden="true"></span> REST APIs,
+  <span class="print:hidden i-local:dj" aria-hidden="true"></span> Django REST APIs,
   <span class="print:hidden i-devicon-azuresqldatabase" aria-hidden="true"></span> SQL databases(SQL Server, PostgreSQL),
   <span class="print:hidden i-local:analytics-pie-2 mr-1 align-middle" aria-hidden="true"></span>Analytics integration and
   <span class="print:hidden i-devicon-prisma align-middle" aria-hidden="true"></span> Prisma.
