@@ -77,9 +77,6 @@ SQL, Microsoft SQL Server, PostgreSQL, Prisma.
 
 TCP/IP, DNS, VPN, Firewalls, Remote Access Assistance
 
-##### _Mobile applications Technologies_
-
-Kotlin and Jetpack Compose, Dart and Flutter
 
 ##### _Support & Monitoring_
 
