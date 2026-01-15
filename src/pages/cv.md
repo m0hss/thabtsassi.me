@@ -4,7 +4,7 @@ title: 'CV'
 description: "Thabt Sassi's CV"
 ---
 
-<a class="block mb-6 print:hidden w-fit opacity-50! hover:opacity-100!" href="/cv.pdf" download="Thabt Sassi - CV">
+<a class="block mb-6 print:hidden w-fit opacity-50! hover:opacity-100!" href="#" download="Thabt Sassi - CV">
 	<span class="i-ri-arrow-down-line"></span> Download as PDF
 </a>
 
@@ -12,7 +12,7 @@ description: "Thabt Sassi's CV"
 
 # Thabt Sassi
 
-> Support Engineer / Software Engineer
+> System / Software Engineer
 
 > Passionate about customizing systems and exploring new technologies,
 > continually seeking to innovate and expand my expertise.
