@@ -32,7 +32,7 @@ export default defineConfig({
         'vertical-align': 'text-bottom',
       },
       collections: {
-        local: FileSystemIconLoader("./src/assets/icons"),
+        local: FileSystemIconLoader('./src/assets/icons'),
         carbon: () => import('@iconify-json/carbon').then((i) => i.default as any),
         ri: () => import('@iconify-json/ri').then((i) => i.default as any),
         devicon: () => import('@iconify-json/devicon').then((i) => i.default as any),
@@ -66,13 +66,13 @@ export default defineConfig({
         },
         // Ensure paragraphs and blockquotes inherit consistent light/dark text colors
         p: {
-          color: 'rgba(0,0,0,0.75)'
+          color: 'rgba(0,0,0,0.75)',
         },
         'html.dark p': {
-          color: 'rgba(255,255,255,0.75)'
+          color: 'rgba(255,255,255,0.75)',
         },
         blockquote: {
-          color: 'rgba(0,0,0,0.75)'
+          color: 'rgba(0,0,0,0.75)',
         },
         // Remove decorative quotation marks added by typography preset
         'blockquote::before': {
@@ -88,7 +88,7 @@ export default defineConfig({
           content: 'none',
         },
         'html.dark blockquote': {
-          color: 'rgba(255,255,255,0.75)'
+          color: 'rgba(255,255,255,0.75)',
         },
         a: {
           color: 'black',
@@ -102,7 +102,8 @@ export default defineConfig({
         },
         'html.dark a': {
           color: 'white',
-          'border-bottom-color': '#cdcdcd42',
+          'border-bottom-color': 'transparent',
+          // 'border-bottom-color': '#cdcdcd42',
         },
         'html.dark a:hover': {
           'border-bottom-color': '#fff',
