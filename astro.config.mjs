@@ -6,10 +6,13 @@ import sitemap from '@astrojs/sitemap';
 import rehypeSlug from 'rehype-slug';
 import rehypeAutolinkHeadings from 'rehype-autolink-headings';
 
+import cloudflare from "@astrojs/cloudflare";
+
 // https://astro.build/config
 export default defineConfig({
   site: 'https://thabtsassi.netlify.app',
   integrations: [mdx(), unocss({ injectReset: true }), sitemap()],
+
   markdown: {
     rehypePlugins: [
       rehypeSlug,
@@ -24,4 +27,6 @@ export default defineConfig({
       ],
     ],
   },
+
+  adapter: cloudflare()
 });
