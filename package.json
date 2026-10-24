@@ -25,7 +25,7 @@
     "@iconify-json/devicon": "^1.2.47",
     "@iconify-json/ri": "^1.2.6",
     "@iconify-json/skill-icons": "^1.2.3",
-    "@iconify/utils": "^2.1.0",
+    "@iconify/utils": "^3.1.7",
     "@unocss/reset": "^66.5.5",
     "prettier": "^3.6.2",
     "prettier-plugin-astro": "^0.14.1",
