@@ -55,9 +55,11 @@ description: "Thabt Sassi's CV"
   - Developed an internal workflow application end‑to‑end: analysis, development and testing
   - Tech: Symfony, MVC, PHP, TWIG, SQL
 
-### Open-source Experience
+### Open-source & Side Projects
 
 - [thabtsassi.me](https://github.com/m0hss/thabtsassi.me) - My personal website using Astro.
+- [ffox-theme-extension](https://addons.mozilla.org/en-US/firefox/addon/one-piece-abstract/) - Firefox theme extension featuring abstract One Piece designs.
+- [wp-plugin-koora](https://sassi-wprojects.vercel.app/products/m0KooraBoards) - WordPress plugin for managing football leagues, teams, and matches with shortcode support.
 
 ### Skills
 
