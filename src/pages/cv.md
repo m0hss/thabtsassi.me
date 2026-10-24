@@ -25,20 +25,16 @@ description: "Thabt Sassi's CV"
 
 ### Work Experience
 
-- [Clevertech France](https://www.clevertech-france.fr/) (_June 2024 - Present_) - Developer (intern) / Support Engineer
-  - Contributed to the development of a data quality assessment SaaS platform built with a
-    research laboratory, integrating scientifically validated data metrics.
-  - Developed backend features in Python/Django REST; implemented syntactic and semantic
-    data validation workflows.
-  - Investigated backend, API, and database issues using logs and PostgreSQL queries.
-  - Collaborated with the engineering team to refine analysis rules and prepare for ML-based
-    enrichment features.
-  - Conducted functional and technical testing post-deployment to ensure accuracy, reliability,
-    and performance.
-  - Documented functional workflows, troubleshooting steps, API behaviors, and deployment
-    notes in Notion and GitLab.
-  - Environment: Python, Django REST API, React JS, PostgreSQL, Azure (cloud deployment),
-    GitLab, Windows Server, IIS, Teams, Notion
+- [Clevertech France](https://www.clevertech-france.fr/) (_June 2024 - Present_) - Software Engineer
+  - Contributed to the development and maintenance of web applications and software systems, including a data quality assessment SaaS platform developed in collaboration with a research laboratory.
+  - Developed frontend and backend features using React, Python, and Django REST Framework, including syntactic and semantic data validation workflows.
+  - Participated in software design and architectural improvements, with a focus on maintainability, scalability, and system reliability.
+  - Investigated and resolved application, API, and database issues through log analysis, debugging, and PostgreSQL queries.
+  - Contributed to performance optimization, application maintenance, and continuous system improvements across development and production environments.
+  - Collaborated with the engineering team to refine business logic, improve data analysis workflows, and explore ML-based enrichment features.
+  - Performed functional and technical testing following deployments to ensure application stability, accuracy, and reliability.
+  - Documented technical workflows, API behaviors, troubleshooting procedures, and deployment processes using Notion and GitLab.
+  - Tech Stack & Tools: Python, Django REST Framework, React.js, PostgreSQL, Microsoft Azure, Windows Server, IIS, GitLab, Microsoft Teams, Notion.
 
 - [Freelance](https://streams-manager.xyz/) (_Mar 2021 - Apr 2023_) - Software Developer
   - Developedand maintained CMS and streaming platforms.
