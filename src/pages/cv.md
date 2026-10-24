@@ -12,7 +12,7 @@ description: "Thabt Sassi's CV"
 
 # Thabt Sassi
 
-> System / Software Engineer
+> Software Engineer / Software Architect
 
 > Passionate about customizing systems and exploring new technologies,
 > continually seeking to innovate and expand my expertise.
@@ -46,7 +46,7 @@ description: "Thabt Sassi's CV"
   - Handled system monitoring, updates, and performance tuning to maintain service reliability.
   - Tech: Linux/Windows hosting, SQL
 
-- [Teleperformance Tunisia](https://www.tp.com/fr-tn/emplacements/tunisia/) (_Nov 2018 - Nov 2019_) - Support Engineer (Level 1 & 2)
+- [Teleperformance Tunisia](https://www.tp.com/fr-tn/emplacements/tunisia/) (_Nov 2018 - Nov 2019_) - Support Engineer (Level 2)
   - Provided day-to-day technical support to users and resolved incidents within SLAs.
   - Investigated hardware, software, and network-related problems.
   - Escalated cases and followed them through until resolution.
@@ -60,6 +60,9 @@ description: "Thabt Sassi's CV"
 - [thabtsassi.me](https://github.com/m0hss/thabtsassi.me) - My personal website using Astro.
 - [ffox-theme-extension](https://addons.mozilla.org/en-US/firefox/addon/one-piece-abstract/) - Firefox theme extension featuring abstract One Piece designs.
 - [wp-plugin-koora](https://sassi-wprojects.vercel.app/products/m0KooraBoards) - WordPress plugin for managing football leagues, teams, and matches with shortcode support.
+- [hermes-agent plugin](https://hermes-agent.nousresearch.com/docs/plugins/antigravity-subscription-directsdk) - Contribution to the Hermes Agent antigravity-subscription-directsdk plugin.
+- [dash-to-dock](https://github.com/micheleg/dash-to-dock/) - Contribution to the GNOME Shell dock extension.
+- Hugo themes - [fixlog](https://fixlog-theme.netlify.app/), [prestige](https://prestige-hugo.netlify.app/) and [strip](https://strip-hugo.netlify.app/).
 
 ### Skills
 
