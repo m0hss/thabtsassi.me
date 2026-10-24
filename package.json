@@ -19,7 +19,7 @@
   },
   "devDependencies": {
     "@astrojs/check": "^0.9.5",
-    "@astrojs/mdx": "^4.3.10",
+    "@astrojs/mdx": "^4.3.14",
     "@astrojs/sitemap": "^3.6.0",
     "@iconify-json/carbon": "^1.2.14",
     "@iconify-json/devicon": "^1.2.47",
